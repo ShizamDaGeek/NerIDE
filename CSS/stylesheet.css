@@ -1,0 +1,413 @@
+/* Body */
+body
+{
+    background-color: #222034;
+    ::-webkit-scrollbar{width: 10px;}
+    ::-webkit-scrollbar-track{background-color: white;}
+    ::-webkit-scrollbar-thumb{background-color: black; cursor: pointer; outline: solid white 2px;}
+    -webkit-user-select: none;
+}   
+
+/* Menu Bar */
+.menu-bar
+{
+    outline: solid white 3px;
+    width: 1900; height: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    align-content: flex-start;
+    color: white;
+    padding: 6px;
+}
+.code-editor-icon
+{
+    outline: solid white 3px;
+    width: 50px;
+}
+
+/* Menu Buttons */
+.open-file-popup
+{
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: #ffffff;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.open-file-popup:hover
+{
+    color: #222034;
+    background-color: #ffffff;
+}
+.file-popup-custom
+{
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: #ffffff;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.edit-button
+{
+    border: none;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 100%;
+}
+.edit-button:hover 
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+.view-button    
+{
+    border: none;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.view-button:hover 
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+.help-button
+{
+    border: none;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.help-button:hover 
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+.undo-button
+{
+    border: none;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.undo-button:hover 
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+.redo-button
+{
+    border: none;
+    background-color: transparent;
+    outline: solid white 3px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.redo-button:hover 
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Container */ 
+.container
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* left tab*/
+.left-tab
+{
+    outline: solid white 3px;
+    width: 50px; height: 865px;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+/* Left tab Buttons */
+.button1
+{
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border: none;
+    font-size: 100%;
+    outline: solid white 3px;
+}
+.button2
+{
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border: none;
+    outline: solid white 3px;
+    margin-top: 5px;
+}
+.button3
+{
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border: none;
+    outline: solid white 3px;
+    margin-top: 5px;
+}
+.button4
+{
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border: none;
+    outline: solid white 3px;
+    margin-top: 5px;
+}
+.button5
+{
+    cursor: pointer;
+    width: 50px; height: 50px;
+    border: none;
+    outline: solid white 3px;
+    margin-top: 5px;
+}
+
+.button1:hover
+{
+    background: linear-gradient(to bottom right , rgb(153, 255, 0),rgb(0, 238, 255));
+}
+.button2:hover
+{
+    background: linear-gradient(to bottom right , rgb(0, 255, 153), rgb(0, 128, 255));
+}
+.button3:hover
+{
+    background: linear-gradient(to bottom right , rgb(0, 221, 255), rgb(166, 0, 255));
+}
+.button4:hover
+{
+    background: linear-gradient(to bottom right , rgb(102, 0, 255), rgb(255, 0, 140));
+}
+.button5:hover
+{
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+}
+
+/* Explorer */
+.file-explorer
+{
+    outline: solid white 3px;
+    width: 400px; height: 865px;
+    min-width: 45px;
+    padding: 6px;
+    margin-right: 10px;
+    resize: horizontal;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/* Button in Explorer */
+.new-file
+{
+    width: 35px; height: 35px;
+    cursor: pointer;
+    border: none;
+    outline: solid white 3px;
+    margin-left: 5px;
+}
+.new-file:hover
+{
+    background: linear-gradient(to bottom right, rgb(0, 225, 255), rgb(179, 0, 255));
+}
+
+.new-folder
+{
+    width: 35px; height: 35px;
+    cursor: pointer;
+    border: none;
+    outline: solid white 3px;
+    margin-left: 5px;
+}
+.new-folder:hover
+{
+    background: linear-gradient(to bottom right, rgb(0, 102, 255), rgb(255, 0, 106));
+}
+
+.refresh
+{
+    width: 35px; height: 35px;   
+    cursor: pointer;
+    border: none;
+    outline: solid white 3px;
+    margin-left: 5px;
+}
+.refresh:hover
+{
+    background: linear-gradient(to bottom right, rgb(0, 255, 140), rgb(0, 21, 255));
+}
+
+.collapse
+{
+    width: 35px; height: 35px;
+    cursor: pointer;
+    border: none;
+    outline: solid white 3px;
+    margin-left: 5px;
+}
+.collapse:hover
+{
+    background: linear-gradient(to bottom right, rgb(255, 196, 0), rgb(0, 255, 55));
+}
+
+.divider
+{
+    border: none;
+    height: 3px;
+    background-color: white;
+}
+
+/* Text area */
+.textarea
+{
+    outline: solid white 3px;
+    width: 1500px; height: 865px;
+    min-width: 400px;
+    padding: 6px;
+    margin-right: 10px;
+    resize: horizontal;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.textarea textarea 
+{
+    width: 100%; height: 100%;
+    box-sizing: border-box;
+}
+
+.textarea-edit
+{
+    border: none;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+/* Terminal */
+.terminalarea
+{
+    outline: solid rgb(13, 255, 0) 3px;
+    background-color: black;
+    padding: 6px;
+    width: 350px; height: 865px;
+    min-width: 150px;
+    scrollbar-width: none;
+    resize: horizontal;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.terminalarea textarea
+{
+    width: 100%; height: 100%;
+    box-sizing: border-box;
+}
+
+.terminal
+{
+    border: none;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.divider_terminal
+{
+    height: 3px;
+    border: none;
+    background-color: rgb(13, 255, 0);
+}
+
+/* Run code and other button */
+.run-code
+{
+    display: flex;
+}
+
+.run-code-button
+{
+    width: 35px; height: 35px;
+    cursor: pointer;
+    outline: solid rgb(13, 255, 0) 3px;
+}
+.run-code-button:hover
+{
+    background-color: rgb(13, 255, 0);
+}
+
+.view-commit-history
+{
+    width: 35px; height: 35px;
+    cursor: pointer;
+    outline: solid rgb(13, 255, 0) 3px;
+    margin-left: 10px;
+}
+.view-commit-history:hover
+{
+    background-color: rgb(13, 255, 0);
+}
+
+/* Status Bar */
+.container-for-status-bar
+{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.status-bar
+{
+    outline: solid white 3px;
+    width: 100%; height: 35px;
+    margin-top: 10px;
+}
