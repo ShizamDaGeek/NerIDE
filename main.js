@@ -1,35 +1,36 @@
-    // Making the window
-    const path = require('path');
-    const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
+const electronReload = require('electron-reload');
 
-    function createMainWindow()
-    {
-        const mainWindow = new BrowserWindow
-        ({
-            title: 'NerIDE',
-            width: 800,
-            height: 600,
-        });
+function createWindow() {
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js'),
+        }
+    });
 
-        mainWindow.loadFile(path.join(__dirname, 'index.html'));
+    win.loadFile('index.html');
+    win.maximize(true);
+}
+
+app.whenReady().then(() => {
+    createWindow();
+
+    app.on('activate', () => {
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow();
+        }
+    });
+
+    electronReload(__dirname, {
+        electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
+    });
+});
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
     }
-
-    app.whenReady().then(() => 
-    {
-        createMainWindow();
-    });
-
-$(document).ready(function() 
-{
-    // Function to open the pop-up
-    $('#open-file-popup').click(function() 
-    {
-        $('#file-button').fadeIn();
-    });
-
-    // Function to close the pop-up
-    $('#close-file-popup').click(function() 
-    {
-        $('#file-button').fadeOut();
-    });
 });

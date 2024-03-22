@@ -6,39 +6,11 @@
         <link rel="stylesheet" href="CSS/stylesheet.css">
         <link rel="img" href="ICON/">
         <script src="main.js"></script>
+        <script src="autocomplete.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>NerIDE</title>
     </head>
     <body>
-        <!-- Menu Bar -->
-        <div class="menu-bar">
-            <img src="ICON/Neride_icon_64px.png" class="code-editor-icon">
-
-            <!-- File -->
-            <button class="open-file-popup">File</button>
-            <div id="file-button" class="file-popup-custom">
-                <a href="">Open</a>
-                <a href="">Save</a>
-                <a href="">Exit</a>
-                <button id="close-file-popup">Close</button>
-            </div>
-
-            <!-- Edit -->
-            <button class="edit-button">Edit</button>
-
-            <!-- View -->
-            <button class="view-button">View</button>
-
-            <!-- Help -->
-            <button class="help-button">Help</button>
-
-            <!-- Undo -->
-            <button class="undo-button"><</button>
-
-            <!-- Redo -->
-            <button class="redo-button">></button>
-        </div>
-
         <!-- Container -->
         <div class="container">
             <!-- Left tab-->
@@ -59,19 +31,19 @@
                 <hr class="divider">
             </div>
 
-            <!-- Code editing part -->
+            <!-- Code editing -->
             <div class="textarea">
-                <textarea id="code" placeholder="Edit Code Here" class="textarea-edit"></textarea>
+                <textarea placeholder="Edit Code Here" class="textarea-edit" id="autocomplete-input"></textarea>
             </div>
 
             <!-- Terminal -->
-            <div class="terminalarea">
+            <div class="terminal">
                 <div class="run-code">
                     <img src="ICON/NerIDE more mini icon1.png" class="run-code-button">
                     <img src="ICON/NerIDE more mini icon2.png" class="view-commit-history">
                 </div>
                 <hr class="divider_terminal">
-                <textarea placeholder="Terminal" class="terminal"></textarea>
+                <textarea placeholder="Terminal" class="command-input"></textarea>
             </div>
 
             <!-- Link to the main.js file -->
@@ -81,7 +53,7 @@
         <!-- Status bar -->
         <div class="container-for-status-bar">
             <div class="status-bar">
-
+                <textarea placeholder="Vim Commands" class="vim-mode"></textarea>
             </div>
         </div>
     </body>

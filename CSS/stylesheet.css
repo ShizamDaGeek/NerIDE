@@ -6,13 +6,27 @@ body
     ::-webkit-scrollbar-track{background-color: white;}
     ::-webkit-scrollbar-thumb{background-color: black; cursor: pointer; outline: solid white 2px;}
     -webkit-user-select: none;
-}   
+    max-width: 100%; max-height: 100%;
+}
+
+/* Styling for autocomplete */
+.ui-autocomplete {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ui-autocomplete li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 5px;
+}
 
 /* Menu Bar */
 .menu-bar
 {
     outline: solid white 3px;
-    width: 1900; height: 25px;
+    width: 1900; height: 50px;
     margin-bottom: 10px;
     display: flex;
     align-content: flex-start;
@@ -166,7 +180,7 @@ body
 .left-tab
 {
     outline: solid white 3px;
-    width: 50px; height: 865px;
+    width: 50px; height: 900px;
     padding: 6px;
     margin-right: 10px;
 }
@@ -238,8 +252,9 @@ body
 .file-explorer
 {
     outline: solid white 3px;
-    width: 400px; height: 865px;
-    min-width: 45px;
+    width: 350px; height: 900px;
+    min-width: 40px;
+    max-width: 900px;
     padding: 6px;
     margin-right: 10px;
     resize: horizontal;
@@ -250,7 +265,7 @@ body
 /* Button in Explorer */
 .new-file
 {
-    width: 35px; height: 35px;
+    width: 30px; height: 30px;
     cursor: pointer;
     border: none;
     outline: solid white 3px;
@@ -263,7 +278,7 @@ body
 
 .new-folder
 {
-    width: 35px; height: 35px;
+    width: 30px; height: 30px;
     cursor: pointer;
     border: none;
     outline: solid white 3px;
@@ -276,7 +291,7 @@ body
 
 .refresh
 {
-    width: 35px; height: 35px;   
+    width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
     outline: solid white 3px;
@@ -289,7 +304,7 @@ body
 
 .collapse
 {
-    width: 35px; height: 35px;
+    width: 30px; height: 30px;
     cursor: pointer;
     border: none;
     outline: solid white 3px;
@@ -311,8 +326,8 @@ body
 .textarea
 {
     outline: solid white 3px;
-    width: 1500px; height: 865px;
-    min-width: 400px;
+    width: 1000px; height: 900px;
+    min-width: 200px;
     padding: 6px;
     margin-right: 10px;
     resize: horizontal;
@@ -321,12 +336,14 @@ body
 }
 .textarea textarea 
 {
+    border: none;
     width: 100%; height: 100%;
     box-sizing: border-box;
 }
 
 .textarea-edit
 {
+    outline: none;
     border: none;
     resize: none;
     background-color: transparent;
@@ -335,26 +352,28 @@ body
 }
 
 /* Terminal */
-.terminalarea
+.terminal
 {
     outline: solid rgb(13, 255, 0) 3px;
     background-color: black;
     padding: 6px;
-    width: 350px; height: 865px;
+    width: 500px; height: 900px;
     min-width: 150px;
+    max-width: 800px;
     scrollbar-width: none;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
 }
-.terminalarea textarea
+.terminal textarea
 {
     width: 100%; height: 100%;
     box-sizing: border-box;
 }
 
-.terminal
+.command-input
 {
+    outline: none;
     border: none;
     resize: none;
     background-color: transparent;
@@ -377,7 +396,7 @@ body
 
 .run-code-button
 {
-    width: 35px; height: 35px;
+    width: 30px; height: 30px;
     cursor: pointer;
     outline: solid rgb(13, 255, 0) 3px;
 }
@@ -388,7 +407,7 @@ body
 
 .view-commit-history
 {
-    width: 35px; height: 35px;
+    width: 30px; height: 30px;
     cursor: pointer;
     outline: solid rgb(13, 255, 0) 3px;
     margin-left: 10px;
@@ -410,4 +429,17 @@ body
     outline: solid white 3px;
     width: 100%; height: 35px;
     margin-top: 10px;
+    padding: 6px;
+}
+
+.vim-mode
+{   
+    border: none;
+    outline: solid white 3px;
+    background-color: transparent;
+    resize: none;
+    width: 400px;
+    font-family: 'Ubuntu', monospace;
+    font-weight: bold;
+    color: white;
 }
