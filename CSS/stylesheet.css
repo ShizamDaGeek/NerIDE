@@ -1,170 +1,12 @@
 /* Body */
 body
 {
-    background-color: #222034;
+    background-color: #000000;
     ::-webkit-scrollbar{width: 10px;}
     ::-webkit-scrollbar-track{background-color: white;}
     ::-webkit-scrollbar-thumb{background-color: black; cursor: pointer; outline: solid white 2px;}
     -webkit-user-select: none;
     max-width: 100%; max-height: 100%;
-}
-
-/* Styling for autocomplete */
-.ui-autocomplete {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.ui-autocomplete li {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    margin: 0;
-    padding: 5px;
-}
-
-/* Menu Bar */
-.menu-bar
-{
-    outline: solid white 3px;
-    width: 1900; height: 50px;
-    margin-bottom: 10px;
-    display: flex;
-    align-content: flex-start;
-    color: white;
-    padding: 6px;
-}
-.code-editor-icon
-{
-    outline: solid white 3px;
-    width: 50px;
-}
-
-/* Menu Buttons */
-.open-file-popup
-{
-    border: none;
-    width: 50px;
-    cursor: pointer;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: #ffffff;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 10px;
-}
-.open-file-popup:hover
-{
-    color: #222034;
-    background-color: #ffffff;
-}
-.file-popup-custom
-{
-    display: none;
-    position: fixed;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: #ffffff;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    margin-left: 10px;
-    font-size: 100%;
-    text-decoration: none;
-}
-
-.edit-button
-{
-    border: none;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: white;
-    width: 50px;
-    cursor: pointer;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    margin-left: 10px;
-    font-size: 100%;
-}
-.edit-button:hover 
-{
-    background-color: #ffffff;
-    color: black;
-}
-
-.view-button    
-{
-    border: none;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: white;
-    width: 50px;
-    cursor: pointer;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 10px;
-}
-.view-button:hover 
-{
-    background-color: #ffffff;
-    color: black;
-}
-
-.help-button
-{
-    border: none;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: white;
-    width: 50px;
-    cursor: pointer;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 10px;
-}
-.help-button:hover 
-{
-    background-color: #ffffff;
-    color: black;
-}
-
-.undo-button
-{
-    border: none;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: white;
-    width: 50px;
-    cursor: pointer;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 10px;
-}
-.undo-button:hover 
-{
-    background-color: #ffffff;
-    color: black;
-}
-
-.redo-button
-{
-    border: none;
-    background-color: transparent;
-    outline: solid white 3px;
-    color: white;
-    width: 50px;
-    cursor: pointer;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 10px;
-}
-.redo-button:hover 
-{
-    background-color: #ffffff;
-    color: black;
 }
 
 /* Container */ 
@@ -179,10 +21,10 @@ body
 /* left tab*/
 .left-tab
 {
-    outline: solid white 3px;
+    outline: solid white 1px;
     width: 50px; height: 900px;
     padding: 6px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 /* Left tab Buttons */
@@ -192,14 +34,14 @@ body
     width: 50px; height: 50px;
     border: none;
     font-size: 100%;
-    outline: solid white 3px;
+    outline: solid white 1px;
 }
 .button2
 {
     cursor: pointer;
     width: 50px; height: 50px;
     border: none;
-    outline: solid white 3px;
+    outline: solid white 1px;
     margin-top: 5px;
 }
 .button3
@@ -207,7 +49,7 @@ body
     cursor: pointer;
     width: 50px; height: 50px;
     border: none;
-    outline: solid white 3px;
+    outline: solid white 1px;
     margin-top: 5px;
 }
 .button4
@@ -215,7 +57,7 @@ body
     cursor: pointer;
     width: 50px; height: 50px;
     border: none;
-    outline: solid white 3px;
+    outline: solid white 1px;
     margin-top: 5px;
 }
 .button5
@@ -223,7 +65,7 @@ body
     cursor: pointer;
     width: 50px; height: 50px;
     border: none;
-    outline: solid white 3px;
+    outline: solid white 1px;
     margin-top: 5px;
 }
 
@@ -251,12 +93,12 @@ body
 /* Explorer */
 .file-explorer
 {
-    outline: solid white 3px;
+    outline: solid white 1px;
     width: 350px; height: 900px;
-    min-width: 40px;
+    min-width: 35px;
     max-width: 900px;
     padding: 6px;
-    margin-right: 10px;
+    margin-right: 5px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
@@ -268,8 +110,8 @@ body
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 3px;
-    margin-left: 5px;
+    outline: solid white 1px;
+    margin-left: 2px;
 }
 .new-file:hover
 {
@@ -281,8 +123,8 @@ body
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 3px;
-    margin-left: 5px;
+    outline: solid white 1px;
+    margin-left: 2px;
 }
 .new-folder:hover
 {
@@ -294,8 +136,8 @@ body
     width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
-    outline: solid white 3px;
-    margin-left: 5px;
+    outline: solid white 1px;
+    margin-left: 2px;
 }
 .refresh:hover
 {
@@ -307,8 +149,8 @@ body
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 3px;
-    margin-left: 5px;
+    outline: solid white 1px;
+    margin-left: 2px;
 }
 .collapse:hover
 {
@@ -318,18 +160,18 @@ body
 .divider
 {
     border: none;
-    height: 3px;
+    height: 1px;
     background-color: white;
 }
 
 /* Text area */
 .textarea
 {
-    outline: solid white 3px;
+    outline: solid white 1px;
     width: 1000px; height: 900px;
     min-width: 200px;
     padding: 6px;
-    margin-right: 10px;
+    margin-right: 5px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
@@ -354,7 +196,7 @@ body
 /* Terminal */
 .terminal
 {
-    outline: solid rgb(13, 255, 0) 3px;
+    outline: solid rgb(13, 255, 0) 1px;
     background-color: black;
     padding: 6px;
     width: 500px; height: 900px;
@@ -383,7 +225,7 @@ body
 
 .divider_terminal
 {
-    height: 3px;
+    height: 1px;
     border: none;
     background-color: rgb(13, 255, 0);
 }
@@ -398,7 +240,7 @@ body
 {
     width: 30px; height: 30px;
     cursor: pointer;
-    outline: solid rgb(13, 255, 0) 3px;
+    outline: solid rgb(13, 255, 0) 1px;
 }
 .run-code-button:hover
 {
@@ -409,8 +251,8 @@ body
 {
     width: 30px; height: 30px;
     cursor: pointer;
-    outline: solid rgb(13, 255, 0) 3px;
-    margin-left: 10px;
+    outline: solid rgb(13, 255, 0) 1px;
+    margin-left: 5px;
 }
 .view-commit-history:hover
 {
@@ -426,7 +268,7 @@ body
 }
 .status-bar
 {
-    outline: solid white 3px;
+    outline: solid white 1px;
     width: 100%; height: 35px;
     margin-top: 10px;
     padding: 6px;
@@ -435,7 +277,7 @@ body
 .vim-mode
 {   
     border: none;
-    outline: solid white 3px;
+    outline: solid white 1px;
     background-color: transparent;
     resize: none;
     width: 400px;
