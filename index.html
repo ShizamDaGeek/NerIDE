@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/stylesheet.css">
-        <link rel="img" href="ICON/">
         <script src="main.js"></script>
         <script src="autocomplete.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -35,7 +34,7 @@
             <div class="textarea">
                 <img src="ICON/NerIDE more mini icon3_ascii.png" class="more-action">
                 <hr>    
-                <textarea class="textarea-edit" id="autocomplete-input"></textarea>
+                <textarea class="textarea-edit" id="autocomplete"></textarea>
             </div>
 
             <!-- Terminal -->
@@ -45,11 +44,9 @@
                     <img src="ICON/NerIDE more mini icon2_ascii.png" class="view-commit-history">
                 </div>
                 <hr class="divider_terminal">
+                <label for="autocomplete">Search ode:</label>
                 <textarea class="command-input"></textarea>
             </div>
-
-            <!-- Link to the main.js file -->
-            <script src="main.js"></script>
         </div>
 
         <!-- Status bar -->
@@ -59,4 +56,6 @@
             </div>
         </div>
     </body>
+    <!-- Link to the main.js file -->
+    <script src="code-snippet.js"></script>
 </html>
