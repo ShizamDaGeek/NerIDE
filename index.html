@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/stylesheet.css">
         <script src="main.js"></script>
-        <script src="autocomplete.js"></script>
+        <script src="code-snippet.js"></script>
+        <script src="file-explorer.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>NerIDE</title>
     </head>
@@ -28,13 +29,16 @@
                 <img src="ICON/NerIDE mini icon3_ascii.png" class="refresh">
                 <img src="ICON/NerIDE mini icon4_ascii.png" class="collapse">
                 <hr class="divider">
+                <ul class="file-list">
+                    
+                </ul>
             </div>
 
             <!-- Code editing -->
             <div class="textarea">
                 <img src="ICON/NerIDE more mini icon3_ascii.png" class="more-action">
                 <hr>    
-                <textarea class="textarea-edit" id="autocomplete"></textarea>
+                <textarea class="textarea-edit"></textarea>
             </div>
 
             <!-- Terminal -->
@@ -56,6 +60,4 @@
             </div>
         </div>
     </body>
-    <!-- Link to the main.js file -->
-    <script src="code-snippet.js"></script>
 </html>
