@@ -6,6 +6,7 @@ body
     ::-webkit-scrollbar-track{background-color: white;}
     ::-webkit-scrollbar-thumb{background-color: #222034; cursor: pointer; outline: solid 1px white;}
     -webkit-user-select: none;
+    margin: 0;
 }
 
 a
@@ -30,11 +31,8 @@ a:link
 /* left tab*/
 .left-tab
 {
-    outline: solid 1px white;
-    width: 40px; height: 935px;
-    padding: 3px;
-    margin-right: 5px;
-    background-color: #302d52;
+    width: 40px; height: 969px;
+    background-color: #25233f;
 }
 
 /* Left tab Buttons */
@@ -44,14 +42,12 @@ a:link
     width: 40px; height: 40px;
     border: none;
     font-size: 100%;
-    outline: solid white 1px;
 }
 .button2
 {
     cursor: pointer;
     width: 40px; height: 40px;
     border: none;
-    outline: solid white 1px;
     margin-top: 1px;
 }
 .button3
@@ -59,7 +55,6 @@ a:link
     cursor: pointer;
     width: 40px; height: 40px;
     border: none;
-    outline: solid white 1px;
     margin-top: 1px;
 }
 .button4
@@ -67,7 +62,6 @@ a:link
     cursor: pointer;
     width: 40px; height: 40px;
     border: none;
-    outline: solid white 1px;
     margin-top: 1px;
 }
 .button5
@@ -75,13 +69,12 @@ a:link
     cursor: pointer;
     width: 40px; height: 40px;
     border: none;
-    outline: solid white 1px;
     margin-top: 1px;
 }
 
 .button1:hover
 {
-    background: linear-gradient(to bottom right , rgb(153, 255, 0),rgb(0, 238, 255));
+    background: linear-gradient(to bottom right , rgb(153, 255, 0), rgb(0, 238, 255));
 }
 .button2:hover
 {
@@ -103,13 +96,10 @@ a:link
 /* File Explorer */
 .file-explorer
 {
-    background-color: #222135;
-    outline: solid white 1px;
-    width: 350px; height: 935px;
+    background-color: #181829;
+    width: 600px; height: 969px;
     min-width: 30px;
-    max-width: 900px;
-    padding: 3px;
-    margin-right: 5px;
+    max-width: 600px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
@@ -120,8 +110,6 @@ a:link
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 1px;
-    margin-left: 1px;
 }
 .new-file:hover
 {
@@ -133,8 +121,6 @@ a:link
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 1px;
-    margin-left: 1px;
 }
 .new-folder:hover
 {
@@ -146,8 +132,6 @@ a:link
     width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
-    outline: solid white 1px;
-    margin-left: 1px;
 }
 .refresh:hover
 {
@@ -159,8 +143,6 @@ a:link
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 1px;
-    margin-left: 1px;
 }
 .collapse:hover
 {
@@ -178,19 +160,14 @@ a:link
 .textarea
 {
     background-color: #302d52;
-    outline: solid white 1px;
-    width: 1000px; height: 935px;
+    width: 100%; height: 969px;
     min-width: 200px;
-    padding: 3px;
-    margin-right: 5px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
-    line-height: 10px;
 }
 .textarea textarea 
 {
-    border: none;
     width: 100%; height: 100%;
     box-sizing: border-box;
 }
@@ -205,105 +182,32 @@ a:link
     font-size: 15px;
 }
 
-.more-action
+.divider
 {
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+.more-action
+{   
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    outline: solid white 1px;
-    margin-left: 1px;
 }
 .more-action:hover
 {
     background: linear-gradient(to bottom right, rgb(255, 0, 106), rgb(195, 0, 255));
 }
 
-/* Terminal */
-.terminal
-{
-    background: linear-gradient(to bottom right, #222034, #20342f);
-    outline: solid rgb(13, 255, 0) 1px;
-    padding: 3px;
-    width: 500px; height: 935px;
-    min-width: 150px;
-    max-width: 800px;
-    scrollbar-width: none;
-    resize: horizontal;
-    overflow: auto;
-    scrollbar-width: none;
-}
-.terminal textarea
-{
-    border: none;
-    width: 100%; height: 100%;
-    box-sizing: border-box;
-}
-
-.command-input
-{
-    outline: none;
-    border: none;
-    resize: none;
-    background-color: transparent;
-    color: white;
-    font-size: 15px;
-}
-
-.divider_terminal
-{
-    height: 1px;
-    border: none;
-    background-color: rgb(13, 255, 0);
-}
-
-.run-code-button
-{
-    width: 30px; height: 30px;
-    cursor: pointer;
-    border: none;
-    outline: solid rgb(13, 255, 0) 1px;
-    margin-left: 1px;
-}
-.run-code-button:hover
-{
-    background-color: rgb(13, 255, 0);
-}
-
-.view-commit-history
-{
-    width: 30px; height: 30px;
-    cursor: pointer;
-    border: none;
-    outline: solid rgb(13, 255, 0) 1px;
-    margin-left: 1px;
-}
-.view-commit-history:hover
-{
-    background-color: rgb(13, 255, 0);
-}
-
 /* Status Bar */
 .container-for-status-bar
 {
     display: flex;
-    background-color: #0e0e16;
-}
-.status-bar
-{
-    outline: solid white 1px;
-    width: 100%; height: 20px;
-    margin-top: 5px;
-    padding: 3px;
 }
 
-.vim-mode
-{   
-    border: none;
-    outline: solid white 1px;
-    background-color: transparent;
-    resize: none;
-    width: 400px; height: 15px;
-    font-family: 'Ubuntu', monospace;
-    font-weight: bold;
-    color: white;
+.status-bar
+{
+    background-color: #000000;
+    width: 100%; height: 20px;
 }
