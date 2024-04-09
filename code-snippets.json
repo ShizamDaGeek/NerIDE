@@ -1,6 +1,14 @@
 {
-    "Python": 
-    [
-        "print()"
-    ]
+    "Python":
+    {
+        "print": "print()",
+        "if": "if :",
+        "elif": "elif :",
+        "else": "else :",
+        "for": "for in :",
+        "while": "while :",
+        "break": "break",
+        "function": "def myFunction():",
+        "return": "return "
+    }
 }
