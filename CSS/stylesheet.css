@@ -33,6 +33,8 @@ a:link
 {
     width: 40px; height: 950px;
     background-color: #25233f;
+    padding: 6px;
+    outline: solid 2px #000000;
 }
 
 /* Left tab Buttons */
@@ -71,26 +73,43 @@ a:link
     border: none;
     margin-top: 1px;
 }
+.button6
+{
+    cursor: pointer;
+    width: 40px; height: 40px;
+    border: none;
+    margin-top: 1px;
+}
 
 .button1:hover
 {
-    background: linear-gradient(to bottom right , rgb(153, 255, 0), rgb(0, 238, 255));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 .button2:hover
 {
-    background: linear-gradient(to bottom right , rgb(0, 255, 153), rgb(0, 128, 255));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 .button3:hover
 {
-    background: linear-gradient(to bottom right , rgb(0, 221, 255), rgb(166, 0, 255));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 .button4:hover
 {
-    background: linear-gradient(to bottom right , rgb(102, 0, 255), rgb(255, 0, 140));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 .button5:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
+}
+.button6:hover
+{
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 
 /* File Explorer */
@@ -99,11 +118,12 @@ a:link
     background-color: #181829;
     width: 600px; height: 950px;
     min-width: 30px;
-    max-width: 600px;
+    max-width: 800px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
     padding: 6px;
+    outline: solid 2px #000000;
 }
 
 .new-file
@@ -167,6 +187,7 @@ a:link
     overflow: auto;
     scrollbar-width: none;
     padding: 6px;
+    outline: solid 2px #000000;
 }
 .textarea textarea 
 {
