@@ -22,7 +22,27 @@ a:link
     color: white;
 }
 
-/* Container */ 
+/* Men Container*/
+.menu-container
+{
+    display: flex;
+    background-color: #181829;
+    outline: solid 2px #000000;
+    padding: 6px;
+} 
+
+/* Men Bar */
+.menu-bar
+{
+    height: 50px;
+}
+
+.neride-icon
+{
+    width: 50px; height: 50px;
+}
+
+/* Cumtainer */ 
 .container
 {
     display: flex;
