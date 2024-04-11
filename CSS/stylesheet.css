@@ -22,7 +22,7 @@ a:link
     color: white;
 }
 
-/* Men Container */
+/* Menu Container */
 .menu-container
 {
     display: flex;
@@ -40,6 +40,16 @@ a:link
 }
 
 .ide-icon
+{
+    width: 40px; height: 40px;
+}
+
+.file
+{
+    width: 40px; height: 40px;
+}
+
+.edit
 {
     width: 40px; height: 40px;
 }
@@ -156,7 +166,8 @@ a:link
 }
 .new-file:hover
 {
-    background: linear-gradient(to bottom right, rgb(0, 225, 255), rgb(179, 0, 255));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 
 .new-folder
@@ -167,7 +178,8 @@ a:link
 }
 .new-folder:hover
 {
-    background: linear-gradient(to bottom right, rgb(0, 102, 255), rgb(255, 0, 106));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 
 .refresh
@@ -178,7 +190,8 @@ a:link
 }
 .refresh:hover
 {
-    background: linear-gradient(to bottom right, rgb(0, 255, 140), rgb(0, 21, 255));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 
 .collapse
@@ -189,7 +202,8 @@ a:link
 }
 .collapse:hover
 {
-    background: linear-gradient(to bottom right, rgb(255, 196, 0), rgb(0, 255, 55));
+    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    outline: solid 2px #ffffff;
 }
 
 .divider
