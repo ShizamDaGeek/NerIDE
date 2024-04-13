@@ -12,12 +12,33 @@ function createWindow()
         webPreferences: 
         {
             preload: path.join(__dirname, 'preload.js'),
+            contextIsolation: true,
+            nodeIntegration: false,
         }
     });
 
     win.loadFile('index.html');
     win.maximize(true);
     win.setMenuBarVisibility(false);
+
+    ipcMain.on('minimize', () => {
+        if (mainWindow) {
+            mainWindow.minimize();
+        }
+    });
+
+    ipcMain.on('resize', (event, { width, height }) => {
+        if (mainWindow) {
+            mainWindow.setSize(width, height);
+            mainWindow.maximize();
+        }
+    });
+
+    ipcMain.on('close', () => {
+        if (mainWindow) {
+            mainWindow.close();
+        }
+    });
 }
 
 app.whenReady().then(() => 
