@@ -1,4 +1,9 @@
 /* Body/Other */
+root
+{
+    background-color: var(#222034);
+}
+
 body
 {
     background-color: #222034;
@@ -6,6 +11,7 @@ body
     ::-webkit-scrollbar-track{background-color: white;}
     ::-webkit-scrollbar-thumb{background-color: #222034; cursor: pointer; outline: solid 1px white;}
     -webkit-user-select: none;
+    margin: 0;
 }
 
 a
@@ -48,13 +54,12 @@ a:link
 .ide-icon
 {
     width: 40px; height: 40px;
-    outline: solid 2px #ffffff;
 }
 
 .file
 {
     width: 50px; height: 40px;
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
     outline: solid 2px #ffffff;
     font-size: 18px;
@@ -72,7 +77,7 @@ a:link
 .edit
 {
     width: 50px; height: 40px;
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
     outline: solid 2px #ffffff;
     font-size: 18px;
@@ -90,7 +95,7 @@ a:link
 .view
 {
     width: 50px; height: 40px;
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
     outline: solid 2px #ffffff;
     font-size: 18px;
@@ -108,7 +113,7 @@ a:link
 .terminal
 {
     width: 90px; height: 40px;
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
     outline: solid 2px #ffffff;
     font-size: 18px;
@@ -126,7 +131,7 @@ a:link
 .help
 {
     width: 50px; height: 40px;
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
     outline: solid 2px #ffffff;
     font-size: 18px;
@@ -148,7 +153,7 @@ a:link
     cursor: pointer;
     color: #00a2ff;
     font-family: 'Ubuntu Mono', monospace;
-    margin-left: 1370px;
+    margin-left: 1400px;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
@@ -167,7 +172,7 @@ a:link
     cursor: pointer;
     color: #00ff73;
     font-family: 'Ubuntu Mono', monospace;
-    margin-left: 10px;
+    margin-left: 8px;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
@@ -186,7 +191,7 @@ a:link
     cursor: pointer;
     color: #ff0077;
     font-family: 'Ubuntu Mono', monospace;
-    margin-left: 10px;
+    margin-left: 8px;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
@@ -202,16 +207,14 @@ a:link
 .container
 {
     display: flex;
-    margin-top: 5px;
 }
 
 /* left tab */
 .left-tab
 {
-    width: 40px; height: 920px;
+    width: 40px; height: 940px;
     background-color: #353152;
     padding: 6px;
-    outline: solid 2px #ffffff;
 }
 
 /* Left tab Buttons */
@@ -293,14 +296,13 @@ a:link
 .file-explorer
 {
     background-color: #222034;
-    width: 600px; height: 920px;
+    width: 600px; height: 940px;
     min-width: 32px;
     max-width: 800px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
     padding: 6px;
-    outline: solid 2px #ffffff;
 }
 
 .new-file
@@ -355,15 +357,14 @@ a:link
 .textarea
 {
     background-color: #353152;
-    width: 1800px; height: 920px;
+    width: 1800px; height: 940px;
     min-width: 200px;
     max-width: 100%;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
     padding: 6px;
-    outline: solid 2px #ffffff;
-    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 .textarea textarea 
 {
@@ -396,12 +397,10 @@ a:link
 .container-for-status-bar
 {
     display: flex;
-    margin-top: 5px;
-    outline: solid 2px #ffffff;
 }
 
 .status-bar
 {
     background-color: #000000;
-    width: 100%; height: 20px;
+    width: 100%; height: 25px;
 }
