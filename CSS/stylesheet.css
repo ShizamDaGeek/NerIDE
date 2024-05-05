@@ -7,11 +7,10 @@ root
 body
 {
     background-color: #222034;
+    margin: 0;
     ::-webkit-scrollbar{width: 15px;}
     ::-webkit-scrollbar-track{background-color: white;}
     ::-webkit-scrollbar-thumb{background-color: #222034; cursor: pointer; outline: solid 1px white;}
-    -webkit-user-select: none;
-    margin: 0;
 }
 
 a
