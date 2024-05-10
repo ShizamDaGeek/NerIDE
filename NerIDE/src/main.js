@@ -1,39 +1,19 @@
-// main.js
-
 const { app, window } = require('@tauri-apps/api');
 
 async function createWindow() {
     await window.create({
         title: 'NerIDE',
-        width: 1920,
-        height: 1089,
         resizable: true,
-        transparent: false,
-        fullscreen: false,
-        maximized: false,
-        decorations: ['Title', 'Minimize', 'Close'],
-        // other window options as needed
+        transparent: true,
+        fullscreen: true,
+        maximized: true,
     });
 
-    // Load the HTML file
+    // LOAD HTML
     await window.loadURL('index.html');
 
-    // Handle window events
+    // HANDEL WINDOWS EVENTS
     window.on('close-requested', () => {
-        window.close();
-    });
-
-    // Listen for IPC messages
-    window.listen('minimize', () => {
-        window.minimize();
-    });
-
-    window.listen('resize', (event) => {
-        const { width, height } = event.payload;
-        window.setSize({ width, height });
-    });
-
-    window.listen('close', () => {
         window.close();
     });
 }
