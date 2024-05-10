@@ -41,166 +41,6 @@ a:link
     color: #ffffff;
 }
 
-/* Menu Container */
-.menu-container
-{   
-    display: flex;
-    background-color: #0e0e16;
-    padding: 6px;
-} 
-
-/* Menu Bar */
-.menu-bar
-{
-    display: flex;
-    height: 20px;
-    align-items: center;
-}
-
-.ide-icon
-{
-    width: 20px; height: 20px;
-}
-
-.file
-{
-    width: 50px; height: 20px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: solid 2px #ffffff;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-}
-.file:hover
-{
-    background-color: #ffffff;
-    color: #222034;
-}
-
-.edit
-{
-    width: 50px; height: 20px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: solid 2px #ffffff;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-}
-.edit:hover
-{
-    background-color: #ffffff;
-    color: #222034;
-}
-
-.view
-{
-    width: 50px; height: 20px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: solid 2px #ffffff;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-}
-.view:hover
-{
-    background-color: #ffffff;
-    color: #222034;
-}
-
-.terminal
-{
-    width: 90px; height: 20px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: solid 2px #ffffff;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-}
-.terminal:hover
-{
-    background-color: #ffffff;
-    color: #222034;
-}
-
-.help
-{
-    width: 50px; height: 20px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: solid 2px #ffffff;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-}
-.help:hover
-{
-    background-color: #ffffff;
-    color: #222034;
-}
-
-.win-option1
-{
-    outline: solid 2px #00a2ff;
-    width: 40px; height: 20px;
-    cursor: pointer;
-    color: #00a2ff;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-left: 1425px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-.win-option1:hover
-{
-    background-color: #00a2ff;
-    color: #222034;
-}
-
-.win-option2
-{
-    outline: solid 2px #00ff73;
-    width: 40px; height: 20px;
-    cursor: pointer;
-    color: #00ff73;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-left: 8px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-.win-option2:hover
-{
-    background-color: #00ff73;
-    color: #222034;
-}
-
-.win-option3
-{
-    outline: solid 2px #ff0077;
-    width: 40px; height: 20px;
-    cursor: pointer;
-    color: #ff0077;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-left: 8px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-.win-option3:hover
-{
-    background-color: #ff0077;
-    color: #222034;
-}
-
 /* Container */ 
 .container
 {
@@ -210,7 +50,7 @@ a:link
 /* left tab */
 .left-tab
 {
-    width: 40px; height: 960px;
+    width: 40px; height: 968px;
     background-color: #353152;
     padding: 6px;
 }
@@ -294,7 +134,7 @@ a:link
 .file-explorer
 {
     background-color: #222034;
-    width: 400px; height: 960px;
+    width: 400px; height: 968px;
     min-width: 32px;
     max-width: 800px;
     resize: horizontal;
@@ -355,7 +195,7 @@ a:link
 .textarea
 {
     background-color: #353152;
-    width: 1100px; height: 960px;
+    width: 1100px; height: 968px;
     min-width: 200px;
     max-width: 100%;
     resize: horizontal;

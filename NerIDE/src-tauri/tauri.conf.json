@@ -16,7 +16,6 @@
         "open": true
       }
     },
-    "entry": "main.js",
     "windows": [
       {
         "title": "neride",

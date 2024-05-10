@@ -1,10 +1,12 @@
-const { app, shell, window } = require('@tauri-apps/api');
+// main.js
+
+const { app, window } = require('@tauri-apps/api');
 
 async function createWindow() {
     await window.create({
-        title: 'My Tauri App',
-        width: 800,
-        height: 600,
+        title: 'NerIDE',
+        width: 1920,
+        height: 1089,
         resizable: true,
         transparent: false,
         fullscreen: false,
@@ -14,7 +16,7 @@ async function createWindow() {
     });
 
     // Load the HTML file
-    await window.loadURL('app://./index.html');
+    await window.loadURL('index.html');
 
     // Handle window events
     window.on('close-requested', () => {
