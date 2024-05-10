@@ -1,17 +1,5 @@
 {
-  "name": "NerIDE",
-  "version": "1.0.0",
-  "description": "code editor",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "author": "ShizamDa_Geek",
-  "license": "ISC",
   "devDependencies": {
-    "electron": "^29.1.1"
-  },
-  "dependencies": {
-    "electron-reload": "^2.0.0-alpha.1"
+    "@tauri-apps/cli": "^1.5.13"
   }
 }
