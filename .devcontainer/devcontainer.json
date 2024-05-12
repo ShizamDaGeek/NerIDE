@@ -1,0 +1,27 @@
+{
+  "name": "Debian",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "features": {
+      // "ghcr.io/devcontainers/features/node:1": {},
+      // "ghcr.io/devcontainers/features/rust:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["svelte.svelte-vscode", "tauri-apps.tauri-vscode"]
+    }
+  },
+  "initializeCommand": "echo 'Initializing dev container...'",
+  "onCreateCommand": "sudo apt update && sudo apt install -y openssh-server libwebkit2gtk-4.0-dev build-essential curl wget file libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev && curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && echo 'Post create setup complete.'",
+  // "onCreateCommand": "sudo apt update && sudo apt install -y openssh-server libwebkit2gtk-4.0-dev build-essential curl wget file libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev && curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && sudo dpkg -i ./gcm-linux_amd64.2.5.0.deb && echo 'Post create setup complete.'",
+  "updateContentCommand": "echo 'Updating content...'",
+  "postCreateCommand": "echo 'Docker image built successfully.'",
+  "postStartCommand": "echo 'PostStartCommand running'",
+  "postAttachCommand": "echo 'Tool attached to container.'",
+  "waitFor": "updateContentCommand",
+  "mounts": [],
+  "runArgs": [
+      "--net", "host", 
+    "-e", "DISPLAY=${env:DISPLAY}",
+      "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+],
+}

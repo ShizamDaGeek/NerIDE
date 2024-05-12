@@ -1,0 +1,15 @@
+{
+    "name": "Ubuntu",
+    "runArgs": [
+        "--init"
+    ],
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "focal"
+        }
+    },
+    "settings": {},
+    "extensions": [],
+    "remoteUser": "vscode"
+}
