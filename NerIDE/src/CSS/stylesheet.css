@@ -52,7 +52,7 @@ a:link
 {
     width: 40px; height: 968px;
     background-color: #353152;
-    padding: 6px;
+    padding: 6px;  
 }
 
 /* Left tab Buttons */
@@ -103,39 +103,45 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 .button2:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 .button3:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 .button4:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 .button5:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 .button6:hover
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 /* File Explorer */
 .file-explorer
 {
-    background-color: #222034;
+    background-color: #1a1929;
     width: 400px; height: 968px;
-    min-width: 32px;
+    min-width: 30px;
     max-width: 800px;
     resize: horizontal;
     overflow: auto;
@@ -153,6 +159,7 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 .new-folder
@@ -165,6 +172,7 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 .refresh
@@ -177,6 +185,7 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 .collapse
@@ -189,13 +198,14 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 /* Text area */
 .textarea
 {
     background-color: #353152;
-    width: 1300px; height: 968px;
+    width: 1400px; height: 968px;
     min-width: 200px;
     max-width: 100%;
     resize: horizontal;
@@ -230,6 +240,7 @@ a:link
 {
     background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
     outline: solid 2px #ffffff;
+    border-radius: 5px;
 }
 
 /* Status Bar */
