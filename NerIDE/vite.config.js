@@ -8,17 +8,12 @@ export default defineConfig(async () => ({
 
     viteStaticCopy({
       targets: [
-         {
-          src: './src', // Source directory containing HTML files and CSS
-          dest: '', // Destination directory for copying static assets
-          isTS: false, // Disable TypeScript processing for static assets
-        },
         {
           src: './src/index.html', dest: '' ,
         },
-        // {
-        //   src: './src/CSS/stylesheet.css', dest: 'CSS/' ,
-        // }
+        {
+          src: './src/CSS/stylesheet.css', dest: 'CSS/' ,
+        }
       ]
     })
   ],
