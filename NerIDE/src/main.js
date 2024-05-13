@@ -1,13 +1,20 @@
-
-console.log("e")
-const { appDataDir, join } = window.__TAURI__.path;
-const { convertFileSrc } = window.__TAURI__.core;
-
+import { appDataDir, join } from '@tauri-apps/api/path';
+import { convertFileSrc } from '@tauri-apps/api/core';
 (async () => {
-    const appDataDirPath = await appDataDir();
-    const filePath = await join(appDataDirPath, 'assets/video.mp4');
-    const assetUrl = convertFileSrc(filePath);
-  })();
+const appDataDirPath = await appDataDir();
+const filePath = await join(appDataDirPath, 'assets/video.mp4');
+const assetUrl = convertFileSrc(filePath);
+})();
+
+// console.log("e")
+// const { appDataDir, join } = window.__TAURI__.path;
+// const { convertFileSrc } = window.__TAURI__.core;
+
+// (async () => {
+//     const appDataDirPath = await appDataDir();
+//     const filePath = await join(appDataDirPath, 'assets/video.mp4');
+//     const assetUrl = convertFileSrc(filePath);
+//   })();
   
 // Below is the attempt to get electron code working in tauri
 // const { app } = window.__TAURI__;

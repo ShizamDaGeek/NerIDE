@@ -13,9 +13,7 @@
   "devDependencies": {
     "@tauri-apps/cli": "^1",
     "create-vite": "^5.2.3",
-    "fs-extra": "^11.2.0",
     "vite": "^5.2.0",
-    "vite-plugin-copy": "^0.1.6",
     "vite-plugin-static-copy": "^1.0.4"
   }
 }
