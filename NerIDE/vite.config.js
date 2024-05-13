@@ -9,6 +9,9 @@ export default defineConfig(async () => ({
     viteStaticCopy({
       targets: [
         {
+          src: './src/main.js', dest: '' ,
+        },
+        {
           src: './src/index.html', dest: '' ,
         },
         {

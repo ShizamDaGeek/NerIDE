@@ -1,8 +1,9 @@
+
+console.log("e")
+const { appDataDir, join } = window.__TAURI__.path;
+const { convertFileSrc } = window.__TAURI__.core;
+
 (async () => {
-    console.log("e")
-    const { appDataDir, join } = window.__TAURI__.path;
-    const { convertFileSrc } = window.__TAURI__.core;
-  
     const appDataDirPath = await appDataDir();
     const filePath = await join(appDataDirPath, 'assets/video.mp4');
     const assetUrl = convertFileSrc(filePath);
