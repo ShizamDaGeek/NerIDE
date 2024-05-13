@@ -18,7 +18,9 @@
   "postStartCommand": "echo 'PostStartCommand running'",
   "postAttachCommand": "echo 'Tool attached to container.'",
   "waitFor": "updateContentCommand",
-  "mounts": [],
+  "mounts": [
+    "source=/home/<USERHERE>/.ssh/,target=/home/vscode/.ssh/,type=bind,consistency=cached"
+  ],
   "runArgs": [
       "--net", "host", 
     "-e", "DISPLAY=${env:DISPLAY}",
