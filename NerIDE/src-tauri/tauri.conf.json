@@ -1,7 +1,7 @@
 {
   "build": {
-    "devPath": "../src",
-    "distDir": "../src",
+    "devPath": "../dist",
+    "distDir": "../dist",
     "withGlobalTauri": true
   },
   "package": {
@@ -29,7 +29,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.shizamdageek.neride",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
