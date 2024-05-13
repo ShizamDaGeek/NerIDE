@@ -1,7 +1,0 @@
-# Use the Visual Studio Code Debian image as the base image
-FROM mcr.microsoft.com/vscode/devcontainers/base:debian
-
-# Set the working directory
-WORKDIR /workspace
-
-# Add any additional commands or configurations you need below
