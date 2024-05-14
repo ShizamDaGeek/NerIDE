@@ -1,19 +1,19 @@
 const { app, window } = require('@tauri-apps/api');
 
-async function createWindow() {
-    await window.create({
+async function createWindow() 
+{
+    await window.create
+    ({
         title: 'NerIDE',
         resizable: true,
-        transparent: true,
-        fullscreen: true,
-        maximized: true,
     });
 
     // LOAD HTML
     await window.loadURL('index.html');
 
     // HANDEL WINDOWS EVENTS
-    window.on('close-requested', () => {
+    window.on('close-requested', () => 
+    {
         window.close();
     });
 }
@@ -21,8 +21,10 @@ async function createWindow() {
 app.start(createWindow);
 
 // Handle macOS specific close event
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
+app.on('window-all-closed', () => 
+{
+    if (process.platform !== 'darwin') 
+    {
         app.quit();
     }
 });
