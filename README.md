@@ -6,4 +6,5 @@ It is made using html, css, jquery and built the app using electron, I was gonna
 The instilation for the ide will be on my itch.io page just not right now, https://shizamdadev.itch.io/neride.
 
 v_0.1 pt.2 (22 Mar 2024): I have made barley any changes need to do more right now I am trying to do code snippets for all programming languages that I can think of.
+
 v_0.1 pt.3 (16 May 20245): I am currently working on reverting my code editor from electron back to trauri, it's gonna take some time to get it setup becasue I have run into a few issues but I shoud be doen by this year of what ever month cannot promis to have it released sooner. 
