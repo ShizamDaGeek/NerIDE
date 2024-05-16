@@ -5,7 +5,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "neride",
+    "productName": "NerIDE",
     "version": "0.0.0"
   },
   "tauri": {
@@ -18,9 +18,10 @@
     },
     "windows": [
       {
-        "title": "neride",
+        "title": "NerIDE",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "maximized": true
       }
     ],
     "security": {
