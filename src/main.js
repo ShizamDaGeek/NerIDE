@@ -2,6 +2,7 @@ const { app, window } = require('@tauri-apps/api');
 
 async function createWindow() 
 {
+    // CREATE WINDOW
     await window.create
     ({
         title: 'NerIDE',
