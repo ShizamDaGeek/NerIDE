@@ -1,14 +1,27 @@
 {
     "Python":
     {
-        "print": "print()",
+        "print": "print('')",
         "if": "if :",
-        "elif": "elif :",
+        "else if": "elif :",
         "else": "else :",
         "for": "for in :",
         "while": "while :",
         "break": "break",
         "function": "def myFunction():",
         "return": "return "
+    },
+    
+    "Java":
+    {
+        "print": "System.out.println('')",
+        "if": "if() {}",
+        "else if": "else if() {}:",
+        "else": "else {}",
+        "for": "for() {}",
+        "while": "while() {}",
+        "break": "break ;",
+        "function": "public void myFunction(){",
+        "return": "return ;"
     }
 }

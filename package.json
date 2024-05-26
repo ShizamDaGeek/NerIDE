@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1"
+  },
+  "dependencies": {
+    "jquery.terminal": "^2.42.0"
   }
 }
