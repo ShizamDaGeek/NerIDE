@@ -4,7 +4,7 @@
         "print": "print('')",
         "if": "if :",
         "else if": "elif :",
-        "else": "else :",
+        "else": "else: ",
         "for": "for in :",
         "while": "while :",
         "break": "break",
@@ -14,12 +14,12 @@
     
     "Java":
     {
-        "print": "System.out.println('')",
-        "if": "if() {}",
-        "else if": "else if() {}:",
+        "print": "System.out.println('');",
+        "if": "if(){}",
+        "else if": "else if(){}",
         "else": "else {}",
         "for": "for() {}",
-        "while": "while() {}",
+        "while": "while(){}",
         "break": "break ;",
         "function": "public void myFunction(){",
         "return": "return ;"
