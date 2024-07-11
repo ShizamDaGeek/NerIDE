@@ -6,11 +6,11 @@ root
 
 body
 {
-    background-color: #222034;
+    background-color: #000000;
     margin: 0;
     ::-webkit-scrollbar{width: 10px;}
     ::-webkit-scrollbar-track{background-color: #7168b3; border-radius: 100px;}
-    ::-webkit-scrollbar-thumb{background: linear-gradient(rgb(3, 255, 226), rgb(255, 0, 187)); cursor: pointer; outline: solid 4px #ffffff; border-radius: 100px;}
+    ::-webkit-scrollbar-thumb{background: linear-gradient(rgb(3, 255, 226), rgb(255, 0, 187)); cursor: pointer; outline: solid 2px #ffffff; border-radius: 100px;}
     user-select: none;
 }
 
@@ -22,14 +22,6 @@ a:link{color: white;}
 {
     background-color: #8a81ce;
     color: #ffffff;
-}
-
-.divider
-{
-    border: none;
-    border-radius: 100px;
-    height: 6px;
-    background-color: #8a81ce;
 }
 
 .description
@@ -47,8 +39,8 @@ a:link{color: white;}
 /* LEFT TAB */
 .left-tab
 {
-    width: 45px; height: 976px;
-    background-color: #232036;
+    width: 45px; height: 956px;
+    background-color: #151231;
     padding: 6px;
 }
 
@@ -98,82 +90,82 @@ a:link{color: white;}
 
 .file-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
 }
 .git-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
     margin-top: 6px;
 }
 .docs-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
     margin-top: 6px;
 }
 .account-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
     margin-top: 6px;
 }
 .settings-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
     margin-top: 6px;
 }
 .hide-file-button
 {
-    background-color: #403d64;
+    background-color: #40258b;
     margin-top: 6px;
 }
 
 .file-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 .git-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 .docs-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 .account-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 .settings-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 .hide-file-button:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
 }
 
 /* FILE EXPLORER */
 .file-explorer
 {
-    background-color: #1a1929;
-    width: 400px; height: 976px;
-    min-width: 135px;
+    background-color: #310f53;
+    width: 400px; height: 968px;
+    min-width: 145px;
     max-width: 800px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
-    padding: 6px;
 }
 
 .dir-options
 {
     width: 100%; height: 30px;
-    background-color: #353152;
+    background-color: #250c3f;
+    padding: 6px;
 }
 
 /* FILE EXPLORER BUTTON */
@@ -182,12 +174,12 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
+    background-color: #403d64;
 }
 .new-file:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
-    border-radius: 2px;
 }
 
 .new-folder
@@ -195,12 +187,12 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
+    background-color: #403d64;
 }
 .new-folder:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
-    border-radius: 2px;
 }
 
 .refresh
@@ -208,12 +200,12 @@ a:link{color: white;}
     width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
+    background-color: #403d64;
 }
 .refresh:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
-    border-radius: 5px;
 }
 
 .collapse
@@ -221,19 +213,19 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
+    background-color: #403d64;
 }
 .collapse:hover
 {
-    background: linear-gradient(to bottom right , rgb(3, 255, 226), rgb(255, 0, 187));
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
-    border-radius: 5px;
 }
 
 /* TEXTAREA */
 .editor
 {
-    background-color: #353152;
-    width: 1400px; height: 976px;
+    background-color: #470867;
+    width: 1450px; height: 956px;
     min-width: 200px;
     max-width: 100%;
     resize: horizontal;
@@ -241,37 +233,11 @@ a:link{color: white;}
     scrollbar-width: none;
     padding: 6px;
     font-family: 'Ubuntu', sans-serif;
-    display: inline-flex;
-    line-height: 21px;
-    gap: 5px;
 }
 .editor textarea 
 {
     width: 100%; height: 975px;
     box-sizing: border-box;
-    line-height: 21px;
-    overflow-y: hidden;
-    background: #29263f;
-    min-width: 500px;
-}
-
-.vertical-number-line
-{
-    width: 20px;
-    text-align: right;
-}
-  
-.vertical-number-line span 
-{
-    counter-increment: linenumber;
-}
-  
-.vertical-number-line span::before 
-{
-    content: counter(linenumber);
-    display: block;
-    color: #ffffff;
-    background-color: #403d64;
 }
 
 .textarea-edit
@@ -281,7 +247,7 @@ a:link{color: white;}
     resize: none;
     background-color: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
