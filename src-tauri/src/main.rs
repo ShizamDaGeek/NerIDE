@@ -3,9 +3,10 @@
     windows_subsystem = "windows"
 )]
 
-use tauri::{CustomMenuItem, Menu, MenuItem, Submenu, Wry};
+use tauri::{CustomMenuItem, Menu, MenuItem, Submenu};
 
-fn main() {
+fn main() 
+{
   let new = CustomMenuItem::new("new".to_string(), "New");
   let open = CustomMenuItem::new("open".to_string(), "Open");
   let exit = CustomMenuItem::new("exit".to_string(), "Exit");
@@ -25,23 +26,31 @@ fn main() {
 
   tauri::Builder::default()
     .menu(menu)
-    .on_menu_event(|event| match event.menu_item_id() {
-      "new" => {
+    .on_menu_event(|event| match event.menu_item_id() 
+    {
+      "new" => 
+      {
         println!("New was clicked");
       }
-      "open" => {
+      "open" => 
+      {
         println!("Open was clicked");
       }
-      "exit" => {
+      "exit" => 
+      {
+        println!("Close was clicked");
         std::process::exit(0);
       }
-      "undo" => {
+      "undo" => 
+      {
         println!("Undo was clicked");
       }
-      "redo" => {
+      "redo" => 
+      {
         println!("Redo was clicked");
       }
-      "about" => {
+      "about" => 
+      {
         println!("About was clicked");
       }
       _ => {}

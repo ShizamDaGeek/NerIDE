@@ -90,31 +90,31 @@ a:link{color: white;}
 
 .file-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
 }
 .git-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
     margin-top: 6px;
 }
 .docs-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
     margin-top: 6px;
 }
 .account-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
     margin-top: 6px;
 }
 .settings-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
     margin-top: 6px;
 }
 .hide-file-button
 {
-    background-color: #40258b;
+    background-color: #2f2864;
     margin-top: 6px;
 }
 
@@ -122,31 +122,37 @@ a:link{color: white;}
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 .git-button:hover
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 .docs-button:hover
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 .account-button:hover
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 .settings-button:hover
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 .hide-file-button:hover
 {
     background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 
 /* FILE EXPLORER */
@@ -164,7 +170,7 @@ a:link{color: white;}
 .dir-options
 {
     width: 100%; height: 30px;
-    background-color: #250c3f;
+    background-color: #250c3d;
     padding: 6px;
 }
 
@@ -174,12 +180,13 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #403d64;
+    background-color: #2f2864;
 }
 .new-file:hover
 {
-    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 
 .new-folder
@@ -187,12 +194,13 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #403d64;
+    background-color: #2f2864;
 }
 .new-folder:hover
 {
-    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 
 .refresh
@@ -200,12 +208,13 @@ a:link{color: white;}
     width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
-    background-color: #403d64;
+    background-color: #2f2864;
 }
 .refresh:hover
 {
-    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 
 .collapse
@@ -213,18 +222,19 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #403d64;
+    background-color: #2f2864;
 }
 .collapse:hover
 {
-    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
     outline: solid 3px #ffffff;
+    border-radius: 5px;
 }
 
 /* TEXTAREA */
 .editor
 {
-    background-color: #470867;
+    background-color: #410a61;
     width: 1450px; height: 956px;
     min-width: 200px;
     max-width: 100%;
@@ -236,7 +246,7 @@ a:link{color: white;}
 }
 .editor textarea 
 {
-    width: 100%; height: 975px;
+    width: 100%; height: 950px;
     box-sizing: border-box;
 }
 
