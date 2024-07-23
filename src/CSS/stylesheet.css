@@ -33,6 +33,21 @@ a:link{color: white;}
     margin: 0;
 }
 
+/* MENU BAR */
+.menu-bar-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151136;
+    height: 20px;
+    padding: 0px;
+}
+.menu-item
+{
+    color: #ffffff;
+}
+
 /* CONTAINER */ 
 .container{display: flex;}
 
