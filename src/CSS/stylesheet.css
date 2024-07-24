@@ -33,19 +33,31 @@ a:link{color: white;}
     margin: 0;
 }
 
+/* MENU BAR CONTAINER */
+.menu-bar-container{display: flex; background-color: #151231;}
+
 /* MENU BAR */
-.menu-bar-container
+.menu-bar
 {
     display: flex;
-    justify-content: space-between;
+    height: 10px;
     align-items: center;
-    background-color: #151136;
-    height: 20px;
-    padding: 0px;
+    gap: 10px;
+    padding: 5px;
 }
-.menu-item
+
+.item
 {
+    font-size: 16px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
     color: #ffffff;
+    cursor: pointer;
+}
+.item:hover
+{
+    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    border-radius: 2px;
 }
 
 /* CONTAINER */ 
