@@ -40,10 +40,15 @@ a:link{color: white;}
 .menu-bar
 {
     display: flex;
-    height: 10px;
+    gap: 2px;
     align-items: center;
-    gap: 10px;
+    height: 20px;
     padding: 5px;
+}
+
+.menu-item 
+{
+    position: relative;
 }
 
 .item
@@ -52,12 +57,54 @@ a:link{color: white;}
     font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
     color: #ffffff;
+    background: #151231;
     cursor: pointer;
+    border: none;
+    padding: 5px 10px;
 }
 .item:hover
 {
-    background: linear-gradient(to bottom right , #3dffaf, #6b00a7);
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
     border-radius: 2px;
+    outline: solid 3px #ffffff;
+}
+.item:hover + .content,
+.content:hover
+{
+    display: block;
+}
+
+.content
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2f2864;
+    outline: solid 3px #ffffff;
+    border-radius: 2px;
+    min-width: 150px;
+    z-index: 1;
+}
+.content button
+{
+    display: block;
+    font-size: 16px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    color: #ffffff;
+    background: #2f2864;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left;
+}
+.content button:hover
+{
+    background: linear-gradient(to bottom right, #3dffaf, #6b00a7);
+    border-radius: 2px;
+    outline: solid 3px #ffffff;
 }
 
 /* CONTAINER */ 
@@ -66,7 +113,7 @@ a:link{color: white;}
 /* LEFT TAB */
 .left-tab
 {
-    width: 45px; height: 956px;
+    width: 45px; height: 965px;
     background-color: #151231;
     padding: 6px;
 }
@@ -186,19 +233,13 @@ a:link{color: white;}
 .file-explorer
 {
     background-color: #310f53;
-    width: 400px; height: 968px;
+    width: 400px; height: 969px;
     min-width: 145px;
     max-width: 800px;
     resize: horizontal;
     overflow: auto;
     scrollbar-width: none;
-}
-
-.dir-options
-{
-    width: 100%; height: 30px;
-    background-color: #250c3d;
-    padding: 6px;
+    padding: 4px;
 }
 
 /* FILE EXPLORER BUTTON */
@@ -207,7 +248,6 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #2f2864;
 }
 .new-file:hover
 {
@@ -221,7 +261,6 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #2f2864;
 }
 .new-folder:hover
 {
@@ -235,7 +274,6 @@ a:link{color: white;}
     width: 30px; height: 30px;   
     cursor: pointer;
     border: none;
-    background-color: #2f2864;
 }
 .refresh:hover
 {
@@ -249,7 +287,6 @@ a:link{color: white;}
     width: 30px; height: 30px;
     cursor: pointer;
     border: none;
-    background-color: #2f2864;
 }
 .collapse:hover
 {
@@ -258,11 +295,22 @@ a:link{color: white;}
     border-radius: 5px;
 }
 
+/* jstree */
+.jstree
+{
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    background-color: #390f66;
+    width: 100%; height: 935px;
+    border-radius: 10px;
+}
+
 /* TEXTAREA */
 .editor
 {
     background-color: #410a61;
-    width: 1450px; height: 956px;
+    width: 1450px; height: 965px;
     min-width: 200px;
     max-width: 100%;
     resize: horizontal;
@@ -287,13 +335,4 @@ a:link{color: white;}
     font-size: 18px;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-}
-
-/* STATUS BAR */
-.container-for-status-bar{display: flex;}
-
-.status-bar
-{
-    background-color: #13131f;
-    width: 100%; height: 20px;
 }

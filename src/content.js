@@ -6,18 +6,6 @@ $(document).ready(function()
         $('.file-explorer').toggle();
     });
 
-    // ADD A VERTICAL NUMBER LINE IN THE TEXTAREA
-    const $textarea = $('textarea');
-    const $lineNumbers = $('.vertical-number-line');
-
-    $textarea.on('keyup', function(event) {
-    const numberOfLines = $(this).val().split('\n').length;
-
-    $lineNumbers.html(new Array(numberOfLines)
-        .fill('<span></span>')
-        .join(''));
-    });
-
     // TAB SYSTEM FOR INDENTATION
     $('textarea').on('keydown', function(event) 
     {
@@ -34,5 +22,54 @@ $(document).ready(function()
 
             event.preventDefault();
         }
+    });
+
+    // FILE TREE TEMP
+    var fileStructure = [
+        {
+            "text": "root",
+            "children": [
+                {
+                    "text": "Folder 1",
+                    "children": [
+                        { "text": "File 1-1.txt", "type": "file" },
+                        { "text": "File 1-2.txt", "type": "file" },
+                        {
+                            "text": "Subfolder 1-1",
+                            "children": [
+                                { "text": "File 1-1-1.txt", "type": "file" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "Folder 2",
+                    "children": [
+                        { "text": "File 2-1.txt", "type": "file" },
+                        {
+                            "text": "Subfolder 2-1",
+                            "children": [
+                                { "text": "File 2-1-1.txt", "type": "file" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ];
+
+    // INITIALIZE JSTREE
+    $('.jstree').jstree
+    ({
+        'core': 
+        {
+            'data': fileStructure
+        },
+        'types': 
+        {
+            'default': { 'icon': 'folder' },
+            'file': { 'icon': 'file' }
+        },
+        'plugins': ['types']
     });
 });

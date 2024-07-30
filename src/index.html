@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
         <script src="main.js"></script>
         <script src="code-snippet-and-other.js"></script>
         <script src="content.js"></script>
@@ -14,12 +16,49 @@
         <!-- MENU BAR -->
         <div class="menu-bar-container">
             <div class="menu-bar">
-                <h3 class="item">File</3>
-                <h3 class="item">Edit</3>
-                <h3 class="item">View</3>
-                <h3 class="item">Help</3>
+                <div class="menu-item">
+                    <button class="item">File</button>
+                    <div class="content">
+                        <button>New File</button>
+                        <button>New Project</button>
+                        <button>New Window</button>
+                        <button>Open File</button>
+                        <button>Open Folder</button>
+                        <button>Save</button>
+                        <button>Save As</button>
+                        <button>Exit</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button class="item">Edit</button>
+                    <div class="content">
+                        <button>Undo</button>
+                        <button>Redo</button>
+                        <button>Cut</button>
+                        <button>Copy</button>
+                        <button>Paste</button>
+                        <button>Find</button>
+                        <button>Replace</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button class="item">View</button>
+                    <div class="content">
+                        <button>Open Terminal</button>
+                        <button>Appearance</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button class="item">Help</button>
+                    <div class="content">
+                        <button>Welcome</button>
+                        <button>Documentation</button>
+                        <button>Tutorial</button>
+                    </div>
+                </div>
             </div>
         </div>
+
 
         <!-- CONTAINER -->
         <div class="container">
@@ -60,24 +99,18 @@
 
             <!-- FILE EXPLORER -->
             <div class="file-explorer">
-                <div class="dir-options">
-                    <img src="ICON/add_new_file_icon.ico" class="new-file">
-                    <img src="ICON/add_new_folder_icon.ico" class="new-folder">
-                    <img src="ICON/refresh_explorer_icon.ico" class="refresh">
-                    <img src="ICON/collaspe_folders_icon.ico" class="collapse">
+                <img src="ICON/add_new_file_icon.ico" class="new-file">
+                <img src="ICON/add_new_folder_icon.ico" class="new-folder">
+                <img src="ICON/refresh_explorer_icon.ico" class="refresh">
+                <img src="ICON/collaspe_folders_icon.ico" class="collapse">
+                <div class="jstree">
+                    
                 </div>
             </div>
 
             <!-- TEXTAREA -->
             <div class="editor">
                 <textarea class="textarea-edit"></textarea>
-            </div>
-        </div>
-
-        <!-- STATUS BAR -->
-        <div class="container-for-status-bar">
-            <div class="status-bar">
-
             </div>
         </div>
     </body>
