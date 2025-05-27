@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Shiza\Documents\ALL CODE HERE\NerIDE\NEW_CHAD_IDE\build\CMakeFiles\3f03d7986e1022fab7d5b3d0d8aec14e\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Shiza\Documents\ALL CODE HERE\NerIDE\NEW_CHAD_IDE\libs\GLFW\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Shiza\Documents\ALL CODE HERE\NerIDE\NEW_CHAD_IDE\libs\GLFW\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Shiza\Documents\ALL CODE HERE\NerIDE\NEW_CHAD_IDE\libs\GLFW\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\Shiza\Documents\ALL CODE HERE\NerIDE\NEW_CHAD_IDE\build\libs\GLFW\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{80CF59CD-8C8A-30F6-9921-E400B7B64281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6D28B468-84E3-3DE2-8094-CA840A714A64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

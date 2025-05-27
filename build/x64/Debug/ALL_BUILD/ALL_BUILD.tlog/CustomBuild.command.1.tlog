@@ -1,0 +1,10 @@
+^C:\USERS\SHIZA\DOCUMENTS\ALL CODE HERE\NERIDE\NEW_CHAD_IDE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE" "-BC:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build" --check-stamp-file "C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

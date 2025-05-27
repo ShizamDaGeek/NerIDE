@@ -1,0 +1,12 @@
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/imgui.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/NerIDE.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/INSTALL.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/CMakeFiles/uninstall.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/CMakeFiles/INSTALL.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/CMakeFiles/ALL_BUILD.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/src/CMakeFiles/glfw.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/src/CMakeFiles/update_mappings.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/src/CMakeFiles/INSTALL.dir
+C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/libs/GLFW/docs/CMakeFiles/INSTALL.dir

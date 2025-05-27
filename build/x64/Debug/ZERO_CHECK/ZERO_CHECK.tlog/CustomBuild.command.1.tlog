@@ -1,0 +1,10 @@
+^C:\USERS\SHIZA\DOCUMENTS\ALL CODE HERE\NERIDE\NEW_CHAD_IDE\BUILD\CMAKEFILES\68129D5ACEFB978D16397BF82A9642CA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE" "-BC:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Shiza/Documents/ALL CODE HERE/NerIDE/NEW_CHAD_IDE/build/NerIDE.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
